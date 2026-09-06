@@ -1,27 +1,65 @@
 # NuCompose
 
-Nubank UI home screen clone.
+Clone da tela inicial do Nubank construído com Jetpack Compose e Material 3.
 
-This project was created based on this other project: [NuCompose](https://github.com/TiagoDanin/NuCompose)
+Projeto baseado em [TiagoDanin/NuCompose](https://github.com/TiagoDanin/NuCompose), reorganizado com arquitetura MVVM por feature inspirada no [Resonance](../Resonance).
 
+## Stack
+
+| Tecnologia | Versão |
+|------------|--------|
+| Android Gradle Plugin | 9.4.0 |
+| Kotlin | 2.2.10 |
+| Compose BOM | 2026.02.01 |
+| Koin | 4.2.2 |
+| Navigation Compose | 2.9.3 |
+| compileSdk / targetSdk | 37 |
+| minSdk | 29 |
+| JVM | 21 |
+
+## Arquitetura
+
+MVVM por feature com Koin para injeção de dependências:
+
+```
+MainActivity → RoutesApp → HomeRoute → HomeViewModel → HomeRepository (mock)
+                              ↓
+                           HomeView → design/components (stateless)
+```
+
+### Estrutura de pacotes
+
+```
+src/
+├── di/                  # Módulo Koin
+├── routes/              # NavHost e rotas
+├── design/
+│   ├── theme/           # Tema Nubank (Material 3)
+│   └── components/      # Widgets reutilizáveis
+└── features/home/
+    ├── models/          # HomeUiState e data classes
+    ├── repositories/    # Dados mock centralizados
+    ├── view_models/     # Lógica de apresentação
+    ├── views/           # Composables stateless
+    └── routes/          # Ponte ViewModel ↔ View
+```
+
+## Funcionalidades
+
+- Header com avatar, saudação e ícones de ação
+- Saldo da conta e atalhos rápidos (carrossel horizontal)
+- Seções de cartão de crédito, empréstimo, seguro e discovery cards
+- Dados mock centralizados no `HomeRepository`
 
 ## Author
 
 William Franco (Dev mobile).
 
-
-## ScreenShots
-
-| Image 1 | Image 2 |
-|----------|----------|
-| ![App Screenshot](assets/screenshots/screen-1.png) | ![App Screenshot](assets/screenshots/screen-2.png) |
-
-
 ## License
 
 MIT License
 
-Copyright (c) 2023 William Franco
+Copyright (c) 2026 William Franco
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
