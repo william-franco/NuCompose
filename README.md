@@ -1,13 +1,11 @@
 # NuCompose
 
-Clone da tela inicial do Nubank construído com Jetpack Compose e Material 3.
-
-Projeto baseado em [TiagoDanin/NuCompose](https://github.com/TiagoDanin/NuCompose), reorganizado com arquitetura MVVM por feature inspirada no [Resonance](../Resonance).
+Nubank home screen clone built with Jetpack Compose and Material 3. Based on [TiagoDanin/NuCompose](https://github.com/TiagoDanin/NuCompose), reorganized with feature-based MVVM and Koin.
 
 ## Stack
 
-| Tecnologia | Versão |
-|------------|--------|
+| Technology | Version |
+|------------|---------|
 | Android Gradle Plugin | 9.4.0 |
 | Kotlin | 2.2.10 |
 | Compose BOM | 2026.02.01 |
@@ -17,43 +15,54 @@ Projeto baseado em [TiagoDanin/NuCompose](https://github.com/TiagoDanin/NuCompos
 | minSdk | 29 |
 | JVM | 21 |
 
-## Arquitetura
+## Architecture
 
-MVVM por feature com Koin para injeção de dependências:
-
-```
-MainActivity → RoutesApp → HomeRoute → HomeViewModel → HomeRepository (mock)
-                              ↓
-                           HomeView → design/components (stateless)
-```
-
-### Estrutura de pacotes
+Feature-based MVVM with Koin for dependency injection.
 
 ```
 src/
-├── di/                  # Módulo Koin
-├── routes/              # NavHost e rotas
+├── di/
+├── routes/
 ├── design/
-│   ├── theme/           # Tema Nubank (Material 3)
-│   └── components/      # Widgets reutilizáveis
+│   ├── theme/
+│   └── components/
 └── features/home/
-    ├── models/          # HomeUiState e data classes
-    ├── repositories/    # Dados mock centralizados
-    ├── view_models/     # Lógica de apresentação
-    ├── views/           # Composables stateless
-    └── routes/          # Ponte ViewModel ↔ View
+    ├── models/
+    ├── repositories/
+    ├── view_models/
+    ├── views/
+    └── routes/
 ```
 
-## Funcionalidades
+## ScreenShots
 
-- Header com avatar, saudação e ícones de ação
-- Saldo da conta e atalhos rápidos (carrossel horizontal)
-- Seções de cartão de crédito, empréstimo, seguro e discovery cards
-- Dados mock centralizados no `HomeRepository`
+| Image 1 | Image 2 | Image 3 |
+|----------|----------|----------|
+| ![App Screenshot](assets/screenshots/screen-1.png) | ![App Screenshot](assets/screenshots/screen-2.png) | ![App Screenshot](assets/screenshots/screen-3.png) |
 
-## Author
+| Image 4 | Image 5 | Image 6 |
+|----------|----------|----------|
+| ![App Screenshot](assets/screenshots/screen-4.png) | ![App Screenshot](assets/screenshots/screen-5.png) | ![App Screenshot](assets/screenshots/screen-6.png) |
 
-William Franco (Dev mobile).
+## Commits
+
+```
+git add . && git commit -m ":rocket: Initial commit." && git push
+git add . && git commit -m ":building_construction: Added initial project architecture." && git push
+git add . && git commit -m ":building_construction: Update project architecture." && git push
+git add . && git commit -m ":memo: Updated project documentation." && git push
+git add . && git commit -m ":memo: Updated code documentation." && git push
+git add . && git commit -m ":white_check_mark: Added feature xyz." && git push
+git add . && git commit -m ":wrench: Fixed xyz usage." && git push
+git add . && git commit -m ":heavy_minus_sign: Removed xyz." && git push
+git add . && git commit -m ":memo: Adjusted project imports." && git push
+git add . && git commit -m ":arrow_up: Updated dependencies." && git push
+git add . && git commit -m ":arrow_down: Removed dependencies." && git push
+git add . && git commit -m ":wastebasket: Removed unused code." && git push
+git add . && git commit -m ":test_tube: Added test functionality xyz." && git push
+git add . && git commit -m ":construction_worker: Building in progress." && git push
+git add . && git commit -m ":construction_worker: Added CI build system." && git push
+```
 
 ## License
 
