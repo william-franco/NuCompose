@@ -1,6 +1,18 @@
 # NuCompose
 
-Nubank home screen clone built with Jetpack Compose and Material 3. Based on [TiagoDanin/NuCompose](https://github.com/TiagoDanin/NuCompose), reorganized with feature-based MVVM and Koin.
+Nubank home screen clone built with Jetpack Compose and Material 3, recreating the account dashboard with balance, shortcuts, credit, loan, insurance, and discovery sections. Based on [TiagoDanin/NuCompose](https://github.com/TiagoDanin/NuCompose), reorganized with feature-based MVVM, Koin, and Navigation Compose. UI state is driven by a single home feature; data comes from a centralized mock repository with no network layer.
+
+## Structure
+
+```mermaid
+flowchart LR
+  MainActivity --> RoutesApp
+  RoutesApp --> HomeRoute
+  HomeRoute --> HomeViewModel
+  HomeViewModel --> HomeRepository
+  HomeRepository --> HomeView
+  HomeView --> DesignComponents[design/components]
+```
 
 ## Stack
 
