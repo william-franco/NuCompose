@@ -18,7 +18,7 @@ flowchart LR
 
 | Technology | Version |
 |------------|---------|
-| Android Gradle Plugin | 9.4.0 |
+| Android Gradle Plugin | 9.5.0 |
 | Kotlin | 2.2.10 |
 | NDK | 30.0.16248370 |
 | Compose BOM | 2026.02.01 |
