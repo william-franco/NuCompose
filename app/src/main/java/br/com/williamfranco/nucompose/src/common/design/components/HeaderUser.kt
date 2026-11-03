@@ -1,4 +1,4 @@
-package br.com.williamfranco.nucompose.src.design.components
+package br.com.williamfranco.nucompose.src.common.design.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -18,7 +18,7 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import br.com.williamfranco.nucompose.src.design.theme.white
+import br.com.williamfranco.nucompose.src.common.design.theme.white
 
 @Composable
 fun HeaderUser(

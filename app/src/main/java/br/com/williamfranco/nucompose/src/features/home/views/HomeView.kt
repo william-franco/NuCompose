@@ -14,18 +14,18 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import br.com.williamfranco.nucompose.src.design.components.AccountBalance
-import br.com.williamfranco.nucompose.src.design.components.ActionViewList
-import br.com.williamfranco.nucompose.src.design.components.ButtonAccount
-import br.com.williamfranco.nucompose.src.design.components.CreditCardSection
-import br.com.williamfranco.nucompose.src.design.components.CreditInfoSection
-import br.com.williamfranco.nucompose.src.design.components.DiscoveryCardsRow
-import br.com.williamfranco.nucompose.src.design.components.HeaderUser
-import br.com.williamfranco.nucompose.src.design.components.InsuranceInfoSection
-import br.com.williamfranco.nucompose.src.design.components.LoanInfoSection
-import br.com.williamfranco.nucompose.src.design.components.PromoCardsRow
-import br.com.williamfranco.nucompose.src.design.theme.NuColor03
-import br.com.williamfranco.nucompose.src.design.theme.NuComposeTheme
+import br.com.williamfranco.nucompose.src.features.home.components.AccountBalance
+import br.com.williamfranco.nucompose.src.features.home.components.ActionViewList
+import br.com.williamfranco.nucompose.src.common.design.components.ButtonAccount
+import br.com.williamfranco.nucompose.src.features.home.components.CreditCardSection
+import br.com.williamfranco.nucompose.src.features.home.components.CreditInfoSection
+import br.com.williamfranco.nucompose.src.features.home.components.DiscoveryCardsRow
+import br.com.williamfranco.nucompose.src.common.design.components.HeaderUser
+import br.com.williamfranco.nucompose.src.features.home.components.InsuranceInfoSection
+import br.com.williamfranco.nucompose.src.features.home.components.LoanInfoSection
+import br.com.williamfranco.nucompose.src.features.home.components.PromoCardsRow
+import br.com.williamfranco.nucompose.src.common.design.theme.NuColor03
+import br.com.williamfranco.nucompose.src.common.design.theme.NuComposeTheme
 import br.com.williamfranco.nucompose.src.features.home.models.HomeUiState
 
 @Composable

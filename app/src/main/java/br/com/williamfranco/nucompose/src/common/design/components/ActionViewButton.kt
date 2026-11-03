@@ -1,4 +1,4 @@
-package br.com.williamfranco.nucompose.src.design.components
+package br.com.williamfranco.nucompose.src.common.design.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -23,7 +23,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import br.com.williamfranco.nucompose.src.design.theme.NuColor03
+import br.com.williamfranco.nucompose.src.common.design.theme.NuColor03
 
 @Composable
 fun ActionViewButton(text: String, icon: ImageVector) {

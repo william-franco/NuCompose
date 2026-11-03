@@ -1,4 +1,4 @@
-package br.com.williamfranco.nucompose.src.design.components
+package br.com.williamfranco.nucompose.src.features.home.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column

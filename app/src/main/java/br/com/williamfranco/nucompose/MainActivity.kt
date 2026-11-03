@@ -4,8 +4,8 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import br.com.williamfranco.nucompose.src.design.theme.NuComposeTheme
-import br.com.williamfranco.nucompose.src.routes.RoutesApp
+import br.com.williamfranco.nucompose.src.common.design.theme.NuComposeTheme
+import br.com.williamfranco.nucompose.src.common.routes.RoutesApp
 
 class MainActivity : ComponentActivity() {
 

@@ -1,4 +1,4 @@
-package br.com.williamfranco.nucompose.src.design.components
+package br.com.williamfranco.nucompose.src.features.home.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -23,16 +23,12 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import br.com.williamfranco.nucompose.src.design.theme.NuBackgroundColor01
-import br.com.williamfranco.nucompose.src.design.theme.NuColor05
-import br.com.williamfranco.nucompose.src.features.home.models.CreditInfo
-import br.com.williamfranco.nucompose.src.features.home.models.HIDDEN_AMOUNT
+import br.com.williamfranco.nucompose.src.common.design.theme.NuBackgroundColor01
+import br.com.williamfranco.nucompose.src.common.design.theme.NuColor05
+import br.com.williamfranco.nucompose.src.features.home.models.LoanInfo
 
 @Composable
-fun CreditInfoSection(
-    creditInfo: CreditInfo,
-    isBalanceVisible: Boolean,
-) {
+fun LoanInfoSection(loanInfo: LoanInfo) {
     Column(
         modifier = Modifier
             .background(MaterialTheme.colorScheme.background)
@@ -44,8 +40,8 @@ fun CreditInfoSection(
             ),
     ) {
         Icon(
-            ImageVector.vectorResource(id = creditInfo.iconRes),
-            contentDescription = creditInfo.title,
+            ImageVector.vectorResource(id = loanInfo.iconRes),
+            contentDescription = loanInfo.title,
             modifier = Modifier
                 .size(34.dp)
                 .padding(start = 8.dp),
@@ -56,7 +52,7 @@ fun CreditInfoSection(
             modifier = Modifier.fillMaxWidth(),
         ) {
             Text(
-                text = creditInfo.title,
+                text = loanInfo.title,
                 style = TextStyle(
                     fontSize = 18.sp,
                     fontFamily = FontFamily.Serif,
@@ -71,37 +67,10 @@ fun CreditInfoSection(
             )
         }
         Text(
-            text = creditInfo.subtitle,
+            text = loanInfo.description,
             modifier = Modifier
                 .padding(top = 10.dp)
                 .fillMaxWidth(),
-            style = TextStyle(
-                color = NuColor05,
-                fontSize = 16.sp,
-                fontFamily = FontFamily.Serif,
-                fontWeight = FontWeight.SemiBold,
-                letterSpacing = (-0.5).sp,
-            ),
-        )
-        Text(
-            text = if (isBalanceVisible) creditInfo.amount else HIDDEN_AMOUNT,
-            modifier = Modifier
-                .padding(top = 2.dp)
-                .fillMaxWidth(),
-            style = TextStyle(
-                fontSize = 24.sp,
-                fontFamily = FontFamily.Serif,
-                fontWeight = FontWeight.Bold,
-                letterSpacing = (-0.5).sp,
-            ),
-        )
-        Text(
-            text = if (isBalanceVisible) {
-                creditInfo.footer
-            } else {
-                "Limite disponível de $HIDDEN_AMOUNT"
-            },
-            modifier = Modifier.fillMaxWidth(),
             style = TextStyle(
                 color = NuColor05,
                 fontSize = 14.sp,

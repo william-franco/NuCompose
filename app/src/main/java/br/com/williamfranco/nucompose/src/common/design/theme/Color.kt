@@ -1,4 +1,4 @@
-package br.com.williamfranco.nucompose.src.design.theme
+package br.com.williamfranco.nucompose.src.common.design.theme
 
 import androidx.compose.ui.graphics.Color
 

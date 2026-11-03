@@ -1,4 +1,4 @@
-package br.com.williamfranco.nucompose.src.design.components
+package br.com.williamfranco.nucompose.src.features.home.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.horizontalScroll
@@ -25,8 +25,8 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import br.com.williamfranco.nucompose.src.design.theme.NuColor02
-import br.com.williamfranco.nucompose.src.design.theme.NuColor03
+import br.com.williamfranco.nucompose.src.common.design.theme.NuColor02
+import br.com.williamfranco.nucompose.src.common.design.theme.NuColor03
 import br.com.williamfranco.nucompose.src.features.home.models.PromoCard
 
 @Composable

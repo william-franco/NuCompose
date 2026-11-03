@@ -1,4 +1,4 @@
-package br.com.williamfranco.nucompose.src.routes
+package br.com.williamfranco.nucompose.src.common.routes
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost

@@ -1,4 +1,4 @@
-package br.com.williamfranco.nucompose.src.design.components
+package br.com.williamfranco.nucompose.src.common.design.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Row
@@ -13,7 +13,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.unit.dp
-import br.com.williamfranco.nucompose.src.design.theme.white
+import br.com.williamfranco.nucompose.src.common.design.theme.white
 
 @Composable
 fun UserAvatar() {

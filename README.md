@@ -30,16 +30,18 @@ flowchart LR
 
 ## Architecture
 
-Feature-based MVVM with Koin for dependency injection.
+Feature-based MVVM with Koin for dependency injection. Shared code lives under `common/`. Reusable UI without feature models stays in `common/design/components/`; home-specific blocks live in `features/home/components/`.
 
 ```
 src/
-├── di/
-├── routes/
-├── design/
-│   ├── theme/
-│   └── components/
+├── common/
+│   ├── dependency_injectors/
+│   ├── design/
+│   │   ├── theme/
+│   │   └── components/
+│   └── routes/
 └── features/home/
+    ├── components/
     ├── models/
     ├── repositories/
     ├── view_models/

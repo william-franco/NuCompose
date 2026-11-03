@@ -1,4 +1,4 @@
-package br.com.williamfranco.nucompose.src.di
+package br.com.williamfranco.nucompose.src.common.dependency_injectors
 
 import br.com.williamfranco.nucompose.src.features.home.repositories.HomeRepository
 import br.com.williamfranco.nucompose.src.features.home.repositories.HomeRepositoryImpl
